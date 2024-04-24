@@ -1,0 +1,15 @@
+    //1.rem文件配置
+module.exports={
+    //去除声明变量而没有使用的错误
+    lintOnSave:false,
+    //手机大小自动变化   
+    css:{
+        loaderOptions:{
+            postcss:{
+                plugins:[
+                    require('postcss-pxtorem')({rootValue:37.5}),
+                ],
+            },
+        },
+    },
+};
